@@ -175,9 +175,12 @@ echo -n "${SECRET_SEED:2}" | sudo tee /etc/chainflip/keys/signing_key_file
   <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203699544-878fd8f2-2ac7-47b8-813c-b5d6145d474b.PNG">
 </p>
 
+```
 sudo chainflip-node key generate-node-key --file /etc/chainflip/keys/node_key_file
-
+```
+```
 cat /etc/chainflip/keys/node_key_file
+```
 
 Backup Juga Node Key Kalian Simpen
 
@@ -217,11 +220,11 @@ private_key_file = "/etc/chainflip/keys/ethereum_key_file"
 db_file = "/etc/chainflip/data.db"
 ```
 
-**Ganti Variable di Atas : **
+Ganti Variable di Atas :
 
-**- IP_ADDRESS_OF_YOUR_NODE =** Ganti Dengan IP VPS Kalian
-**- WSS_ENDPOINT_FROM_ETHEREUM_CLIENT =** Ganti Dengan WSS ENDPOINT Yang Sebelumnya Sudah Kalian Buat di Website Alcemy
-**- HTTPS_ENDPOINT_FROM_ETHEREUM_CLIENT=** Ganti Dengan HTTPS ENDPOINT Yang Sebelumnya Sudah Kalian Buat di Website Alcemy
+- IP_ADDRESS_OF_YOUR_NODE = Ganti Dengan IP VPS Kalian
+- WSS_ENDPOINT_FROM_ETHEREUM_CLIENT = Ganti Dengan WSS ENDPOINT Yang Sebelumnya Sudah Kalian Buat di Website Alcemy
+- HTTPS_ENDPOINT_FROM_ETHEREUM_CLIENT= Ganti Dengan HTTPS ENDPOINT Yang Sebelumnya Sudah Kalian Buat di Website Alcemy
 
 ## Jalankan Node
 
