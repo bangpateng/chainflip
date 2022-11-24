@@ -125,7 +125,7 @@ sudo apt-get install -y chainflip-cli chainflip-node chainflip-engine
 ```
 
 <p align="center">
-  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203699555-9df0ceb3-efe8-4813-b342-4774ea03e1bf.jpg">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203707588-a5803edf-9701-4c31-8030-55d423d02729.JPG">
 </p>
 
 ```
