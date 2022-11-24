@@ -20,7 +20,7 @@
 
 [Goerli faucet](https://goerlifaucet.com)
 
-[Goerli RPC](https://alchemy.com/?r=44b9e90dc6860958)
+[Goerli RPC](https://alchemy.com/?r=b2360e83006e718e)
 
 ## Persyaratan hardware & software
 
