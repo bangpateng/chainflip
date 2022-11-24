@@ -278,7 +278,7 @@ sudo systemctl enable chainflip-engine
 **Cek log chainflip-engine**
 
 ```
-tail -f /var/log/chainflip-engine.log
+tail -f /var/log/chainflip-node.log
 ```
 
 ## Stake
