@@ -254,7 +254,11 @@ sudo systemctl status chainflip-node
 tail -f /var/log/chainflip-node.log
 ```
 
-Jika log sudah seperti ini 💤 Idle (15 peers), best: #3578 (0xcf9a…d842), finalized #3576 (0x6a0e…03fe), ⬇ 27.0kiB/s ⬆ 25.5kiB/s ✨ Imported #3579 (0xa931…c03e) anda dapat melanjutkan langkah selanjutnya
+Jika log sudah seperti ini atau seperti gambar di bawah 💤 Idle (15 peers), best: #3578 (0xcf9a…d842), finalized #3576 (0x6a0e…03fe), ⬇ 27.0kiB/s ⬆ 25.5kiB/s ✨ Imported #3579 (0xa931…c03e) anda dapat melanjutkan langkah selanjutnya
+
+<p align="center">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203727069-70ac1de1-1c94-44d2-99c6-df2c28cd0c99.JPG">
+</p>
 
 **Jalankan chainflip-engine**
 
@@ -308,6 +312,10 @@ sudo systemctl restart chainflip-engine
 
 Sebelum mendaftarkan Validator key, pastikan node anda telah tersinkronisasi penuh, lalu jalankan perintah dibawah:
 
+<p align="center">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203726705-d30dfe83-6feb-44ef-9718-a46f686e392f.JPG">
+</p>
+
 ```
 sudo chainflip-cli \
       --config-path /etc/chainflip/config/Default.toml \
@@ -318,6 +326,10 @@ sudo chainflip-cli \
 
 Setelah itu aktifkan validator agar bisa mengikuti auction selanjutnya, jalankan perintah berikut:
 
+<p align="center">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203726701-8e61a4a4-0c7f-4a41-82c8-c29074ae454c.jpg">
+</p>
+
 ```
 sudo chainflip-cli \
     --config-path /etc/chainflip/config/Default.toml \
@@ -326,12 +338,20 @@ sudo chainflip-cli \
 
 Terakhir putar validator key anda dengan menggunakan perintah berikut:
 
+<p align="center">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203726696-c870958e-7230-4a5a-9b23-0c3a71fd0665.jpg">
+</p>
+
 ```
 sudo chainflip-cli \
     --config-path /etc/chainflip/config/Default.toml rotate
 ```
 
 (OPSIONAL) anda dapat mengkostumisasi nama validator anda menggunakan perintah berikut:
+
+<p align="center">
+  <img height="auto" width="auto" src="https://user-images.githubusercontent.com/38981255/203726677-e5f31004-bad9-4e14-9150-f68803e70e4c.jpg">
+</p>
 
 ```
 sudo chainflip-cli \
