@@ -335,3 +335,83 @@ sudo chainflip-cli \
     --config-path /etc/chainflip/config/Default.toml \
     vanity-name <NAMA_BARU_VALIDATOR_ANDA>
 ```
+
+## Menghentikan validator
+
+Jika anda ingin berhenti menjadi validator, anda bisa menggunakan perintah berikut:
+
+```
+sudo chainflip-cli \
+    --config-path /etc/chainflip/config/Default.toml \
+    retire
+```
+
+> Setelah menjalankan perintah diatas, anda akan berhenti mengikuti validator auction
+
+Lalu tarik tFlip Token anda
+
+```
+sudo chainflip-cli \
+    --config-path /etc/chainflip/config/Default.toml \
+    claim <JUMLAH_TFLIP_TOKEN_YANG_INGIN_DITARIK> <ADDRESS_ETH_UNTUK_MENERIMA_TOKEN>
+```
+
+> Jangan lupa untuk memasukan jumlah tFlip Token yang ingin ditarik dan mengganti address ETH
+
+## Perintah berguna
+
+### Menjalankan service
+
+* Menjalankan service chainflip-node
+
+  ```
+  sudo systemctl start chainflip-node
+  ```
+
+* Menjalankan service chainflip-engine
+
+  ```
+  sudo systemctl start chainflip-engine
+  ```
+
+### Memulai ulang service
+
+* Memulai ulang service chainflip-node
+
+  ```
+  sudo systemctl restart chainflip-node
+  ```
+
+* Memulai ulang service chainflip-engine
+
+  ```
+  sudo systemctl restart chainflip-engine
+  ```
+
+### Menghentikan service
+
+* Menghentikan service chainflip-node
+
+  ```
+  sudo systemctl stop chainflip-node
+  ```
+
+* Menghentikan service chainflip-engine
+
+  ```
+  sudo systemctl stop chainflip-engine
+  ```
+
+### Cek log
+
+* Cek log chainflip-node
+
+  ```
+  tail -f /var/log/chainflip-node.log
+  ```
+
+* Cek log chainflip-engine
+
+  ```
+  tail -f /var/log/chainflip-engine.log
+  ```
